@@ -77,9 +77,9 @@ body {
 .showcase-body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem; }
+  grid-gap: 0rem; }
   .showcase-body p {
-    font-size: 24px; }
+    font-size: 32px; }
 
 .line {
   position: absolute;
@@ -133,7 +133,7 @@ body {
   .projects {
     padding: 0 4rem; } }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .social p {
     display: none; }
   .showcase-body {
