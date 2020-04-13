@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+$primary-color: #1d1c20;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1520264914976-a1ddb24d2114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// .background {
+
+// }
+
+.dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1100px;
+  width: 100vw;
+  // z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dim-project {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: baseline;
+
+  .social {
+    display: flex;
+    margin: auto;
+    margin-right: 1rem;
+
+    a {
+      cursor: pointer;
+      margin-right: 1rem;
+      font-size: 3rem;
+    }
+    a:visited {
+      color: white;
+    }
+    a:hover {
+      transition: color 0.3s ease;
+      color: rgba(112, 168, 98, 0.3);
+    }
+  }
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 30%;
+  background: url('/img/IMG-7251.jpg') no-repeat center center/cover;
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  border: #fff 2px solid;
+}
+
+.avatar:hover {
+  animation: enlarge forwards 0.2s ease-in-out;
+}
+
+.avatar.shrink {
+  animation: shrink forwards 0.2s ease-in-out;
+}
+
+.showcase {
+  background: transparent;
+  margin-bottom: 2rem;
+
+  .full-bio {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    .bio-btn {
+      background: rgba(55, 75, 50, 0.3);
+      border: 2px solid #fff;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .bio-btn:hover {
+      transition: all 0.4s ease;
+      background-color: rgba(15, 85, 236, 0.3);
+    }
+  }
+}
+
+.showcase-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-right: 2rem;
+}
+
+.section-projects {
+  .projects {
+    margin-top: 3rem;
+  }
+
+  .project-img {
+    border-radius: 12px;
+    border: 2px solid rgba(112, 168, 98, 0.3);
+    height: 18rem;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .project-img:hover {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .trivia {
+    background: url('https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80')
+      no-repeat center center/cover;
+  }
+
+  .tic {
+    background: url('https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+      no-repeat center center/cover;
+  }
+
+  .lyric {
+    border: 2px solid rgba(112, 168, 98, 0.3);
+    background: url('https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80')
+      no-repeat center center/cover;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// BIO PAGE STYLEs
+
+@media (max-width: 767px) {
+  .dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1850px;
+    width: 100vw;
+    // z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .social {
+    p {
+      display: none;
+    }
+  }
+  .showcase-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//avatar animations
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+// add css file for bio page
+// scale to all platforms
+// upload projects to git then netlify
