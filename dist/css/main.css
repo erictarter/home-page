@@ -37,8 +37,6 @@ body {
       cursor: pointer;
       margin-right: 1rem;
       font-size: 3rem; }
-    .header .social a:visited {
-      color: white; }
     .header .social a:hover {
       transition: color 0.3s ease;
       color: rgba(112, 168, 98, 0.3); }
