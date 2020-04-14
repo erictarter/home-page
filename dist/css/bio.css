@@ -38,6 +38,7 @@ body {
   display: flex;
   align-content: center;
   justify-content: baseline;
+  margin-bottom: 1.5rem;
 }
 
 .header .social {
@@ -110,6 +111,7 @@ body {
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  margin-bottom: 0.8rem;
 }
 
 .bio-header h1 {
@@ -194,7 +196,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1500px;
+    height: 1510px;
     width: 100vw;
     /* // z-index: 1; */
     background: rgba(0, 0, 0, 0.2);
@@ -210,6 +212,13 @@ body {
 
   .social p {
     display: none;
+  }
+
+  a {
+    color: #fff;
+  }
+  a:visited {
+    color: #fff;
   }
 
   .bio-body {
