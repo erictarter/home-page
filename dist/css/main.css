@@ -26,7 +26,7 @@ body {
   background: rgba(0, 0, 0, 0.6); }
 
 .header {
-  max-width: 70%;
+  max-width: 60%;
   margin: auto;
   display: flex;
   flex-direction: row;
