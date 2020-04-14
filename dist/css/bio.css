@@ -193,6 +193,19 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    background: url('https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60')
+      no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   .dim {
     position: absolute;
     top: 0;
@@ -200,7 +213,7 @@ body {
     height: 1510px;
     width: 100vw;
     /* // z-index: 1; */
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .back-home {
