@@ -39,21 +39,22 @@ body {
 }
 
 .header {
+  max-width: 70%;
+  margin: auto;
   display: flex;
+  flex-direction: row;
   align-content: center;
-  justify-content: baseline;
+  justify-content: space-between;
 
   .social {
     display: flex;
-    margin: auto;
-    margin-right: 1rem;
+    // margin: auto;
+    margin-top: 1.2rem;
 
     a {
       cursor: pointer;
       margin-right: 1rem;
       font-size: 3rem;
-    }
-    a {
       color: white;
     }
     a:hover {
@@ -68,9 +69,9 @@ body {
   height: 6rem;
   border-radius: 30%;
   background: url('/img/IMG-7251.jpg') no-repeat center center/cover;
-  margin-left: 1.5rem;
-  margin-right: 2rem;
   border: #fff 2px solid;
+  margin-left: 1rem;
+  margin-top: 0;
 }
 
 .avatar:hover {
@@ -105,7 +106,7 @@ body {
 
 .showcase-body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 0rem;
 
   p {
@@ -172,7 +173,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1850px;
+    height: 1930px;
     width: 100vw;
     // z-index: 1;
     background: rgba(0, 0, 0, 0.2);
@@ -180,20 +181,34 @@ body {
 }
 
 @media (max-width: 600px) {
-  .projects {
-    padding: 0 4rem;
+  .header {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-@media (max-width: 600px) {
   .social {
     p {
       display: none;
+    }
+
+    a {
+      color: #fff;
+    }
+    a:visited {
+      color: #fff;
     }
   }
   .showcase-body {
     display: flex;
     flex-direction: column;
+  }
+
+  .projects {
+    padding: 0 4rem;
   }
 }
 

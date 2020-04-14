@@ -26,18 +26,19 @@ body {
   background: rgba(0, 0, 0, 0.6); }
 
 .header {
+  max-width: 70%;
+  margin: auto;
   display: flex;
+  flex-direction: row;
   align-content: center;
-  justify-content: baseline; }
+  justify-content: space-between; }
   .header .social {
     display: flex;
-    margin: auto;
-    margin-right: 1rem; }
+    margin-top: 1.2rem; }
     .header .social a {
       cursor: pointer;
       margin-right: 1rem;
-      font-size: 3rem; }
-    .header .social a:visited {
+      font-size: 3rem;
       color: white; }
     .header .social a:hover {
       transition: color 0.3s ease;
@@ -48,9 +49,9 @@ body {
   height: 6rem;
   border-radius: 30%;
   background: url("/img/IMG-7251.jpg") no-repeat center center/cover;
-  margin-left: 1.5rem;
-  margin-right: 2rem;
-  border: #fff 2px solid; }
+  border: #fff 2px solid;
+  margin-left: 1rem;
+  margin-top: 0; }
 
 .avatar:hover {
   animation: enlarge forwards 0.2s ease-in-out; }
@@ -77,7 +78,7 @@ body {
 
 .showcase-body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 0rem; }
   .showcase-body p {
     font-size: 32px; }
@@ -126,20 +127,29 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1850px;
+    height: 1930px;
     width: 100vw;
     background: rgba(0, 0, 0, 0.2); } }
 
 @media (max-width: 600px) {
-  .projects {
-    padding: 0 4rem; } }
-
-@media (max-width: 600px) {
+  .header {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   .social p {
     display: none; }
+  .social a {
+    color: #fff; }
+  .social a:visited {
+    color: #fff; }
   .showcase-body {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .projects {
+    padding: 0 4rem; } }
 
 @keyframes enlarge {
   from {

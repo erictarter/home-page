@@ -33,6 +33,8 @@ body {
 }
 
 .header {
+  max-width: 75%;
+  margin: auto;
   display: flex;
   align-content: center;
   justify-content: baseline;
@@ -92,9 +94,11 @@ body {
 }
 
 .bio-body {
+  max-width: 70%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  margin: 0 8rem;
+  /* margin: 0 8rem; */
 }
 
 .bio-body .lead {
@@ -153,6 +157,11 @@ body {
   font-size: 1.5rem;
 }
 
+.programming .lead {
+  max-width: 80%;
+  /* margin: auto; */
+}
+
 .hobbies .item {
   font-size: 1.5rem;
 }
@@ -185,7 +194,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1400px;
+    height: 1500px;
     width: 100vw;
     /* // z-index: 1; */
     background: rgba(0, 0, 0, 0.2);
@@ -204,9 +213,10 @@ body {
   }
 
   .bio-body {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem;
   }
 
   .bio-header {
