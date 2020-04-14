@@ -35,9 +35,11 @@ body {
   .header .social {
     display: flex;
     margin-top: 1.2rem; }
+    .header .social .facebook {
+      margin-right: 1rem; }
     .header .social a {
       cursor: pointer;
-      margin-right: 1rem;
+      margin-left: 1rem;
       font-size: 3rem;
       color: white; }
     .header .social a:hover {
@@ -139,6 +141,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+  .avatar {
+    margin-left: 0; }
   .social p {
     display: none; }
   .social a {

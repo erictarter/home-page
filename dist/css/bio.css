@@ -207,6 +207,10 @@ body {
     font-size: 1.5rem;
   }
 
+  .social {
+    padding-top: 0.5rem;
+  }
+
   .social a {
     font-size: 2.2rem;
   }
