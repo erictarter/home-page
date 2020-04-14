@@ -168,6 +168,18 @@ body {
   transform: translateX(-50%);
 }
 
+@media (max-width: 730px) {
+  .dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1400px;
+    width: 100vw;
+    /* // z-index: 1; */
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
 @media (max-width: 600px) {
   .dim {
     position: absolute;

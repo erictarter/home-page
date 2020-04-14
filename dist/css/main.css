@@ -68,6 +68,7 @@ body {
     .showcase .full-bio .bio-btn {
       background: rgba(55, 75, 50, 0.3);
       border: 2px solid #fff;
+      font-size: 2rem;
       margin-top: 3rem;
       margin-bottom: 3rem; }
     .showcase .full-bio .bio-btn:hover {
