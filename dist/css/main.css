@@ -17,7 +17,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 1100px;
+  height: 1480px;
   width: 100vw;
   background: rgba(0, 0, 0, 0.2); }
 
@@ -121,6 +121,15 @@ body {
   border: 2px solid rgba(112, 168, 98, 0.3);
   background: url("https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80") no-repeat center center/cover; }
 
+.section-projects .chair {
+  background: url("https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80") no-repeat center center/cover; }
+
+.section-projects .covid {
+  background: url("https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80") no-repeat center center/cover; }
+
+.section-projects .bank {
+  background: url("https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60") no-repeat center center/cover; }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -132,7 +141,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1930px;
+    height: 2930px;
     width: 100vw;
     background: rgba(0, 0, 0, 0.2); } }
 
@@ -147,7 +156,8 @@ body {
     -o-background-size: cover;
     background-size: cover; }
   .dim {
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.3);
+    height: 3130px; }
   .header {
     max-width: 80%;
     margin: auto;
@@ -168,6 +178,11 @@ body {
     flex-direction: column; }
   .projects {
     padding: 0 4rem; } }
+
+@media (max-width: 320px) {
+  .dim {
+    background: rgba(0, 0, 0, 0.3);
+    height: 3250px; } }
 
 @keyframes enlarge {
   from {
